@@ -20,7 +20,7 @@ You can access a live demo here -> [LensCraft](https://lenscraft-77a6f.web.app/)
 
 ## Server Side Repository
 
-Click here for the server side repo -> [LensCraft Server Side Repository](https://github.com/showkatali-dev/lenscraft-server)
+Click here for the server side repo -> [LensCraft Server Side Repository](https://github.com/parthasarathi019/lenscraft-server)
 
 ## Used packages/ technology
 
