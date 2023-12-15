@@ -44,12 +44,11 @@ const Header = () => {
 
                     {/* menu  */}
                     <div className="">
-                        <div className={` ${showMenu ? "bg-[#444] text-white absolute top-14 left-0 w-[27%]" : "hidden"}`}>
+                        <div className={` ${showMenu ? "bg-[#444] text-white absolute top-14 left-0 lg:w-[27%] w-full" : "hidden"}`}>
                             <ul className="space-y-3">
-
-                                <li className=" group p-3 cursor-pointer hover:bg-white w-full text-[14px] hover:text-black py-2]">
+                                <li className=" group p-3 cursor-pointer hover:bg-white w-full z-50 text-[14px] hover:text-black py-2]">
                                     <span className="text-[20px]">Job and the workplace</span>
-                                    <div className="bg-white min-w-max text-black absolute top-0 px-20 left-[100%] p-3 justify-between items-center gap-12 opacity-0 hidden group-hover:opacity-100 w-full shadow-2xl z-10 group-hover:flex transition duration-200 border">
+                                    <div className="bg-white min-w-max text-black absolute top-0 px-20 lg:left-[100%] z-50 p-3 justify-between items-center gap-12 opacity-0 hidden group-hover:opacity-100 w-full shadow-2xl group-hover:flex transition duration-200 border">
                                         <div className="flex flex-col gap-4">
                                             <h1 className="text-2xl underline font-bold">Job and the workplace</h1>
                                             <a href="/" className="cursor-pointer hover:underline">Find a job</a>

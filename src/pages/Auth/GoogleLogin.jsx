@@ -11,7 +11,7 @@ const GoogleLogin = () => {
       Swal.fire({
         icon: "success",
         title: "Success!",
-        text: res.message,
+        text: res?.message,
         timer: 2000,
         position: "top-end",
       });

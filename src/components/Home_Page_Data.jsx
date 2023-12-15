@@ -5,7 +5,7 @@ const Home_Page_Data = () => {
         <div>
             <section>
 
-                <section className=' pt-6 px-[54px] grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center'>
+                <section className='pt-6 px-4 lg:px-[54px] grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center'>
                     <div>
                         <p className='text-[1.5em] text-[#284162] underline font-semibold'>Jobs</p>
                         <p className='text-[1.2em]'>Find a job, training, hiring programs, work permits, Social Insurance Number (SIN)</p>
@@ -69,7 +69,7 @@ const Home_Page_Data = () => {
 
                 </section>
 
-                <section className='mx-[54px] rounded-md mt-12 bg-[#f5f5f5]'>
+                <section className='lg:mx-[54px] px-5 rounded-md mt-12 bg-[#f5f5f5]'>
                     <div className='flex items-center justify-between gap-x-5'>
                         <div className=''>
                             <p className='text-[2em] font-semibold mb-7'>Your government</p>
@@ -93,10 +93,10 @@ const Home_Page_Data = () => {
 
                 </section>
 
-                <section className='px-[54px] mt-6'>
+                <section className='lg:px-[54px] px-5 mt-6'>
                     <p className='text-[1.7em] font-semibold mb-4'>Government initiatives</p>
 
-                    <div className='grid grid-cols-2 gap-x-8 gap-y-6'>
+                    <div className='grid lg:grid-cols-2 grid-cols-1 gap-x-8 gap-y-6'>
                         <div className='shadow-lg pb-8 pt-2 px-2'>
                             <div className=''>
                                 <img src="https://www.canada.ca/content/dam/canada/activities/20231121-1-520x200.jpg" alt="" />

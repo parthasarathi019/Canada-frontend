@@ -469,7 +469,7 @@ const Home = () => {
                     </div>
                 </div>
             </>
-            <div className='md:px-[60px] mt-7'>
+            <div className='md:px-[60px] px-5 mt-7'>
                 <div className=' flex gap-x-4'>
                     <p>Canada.ca &gt;</p>
                     <p className='underline'>Immigration and citizenship &gt;</p>
@@ -478,7 +478,7 @@ const Home = () => {
 
                 <p className='text-[#333333] font-semibold pt-7 text-[39px]'>How to check your application status</p>
                 <div className='py-1'><hr className='border border-red-900  border-t-0' /></div>
-                <div className=' flex justify-between items-center '>
+                <div className=' lg:flex md:flex justify-between items-center px-2'>
                     <p className='text-[#333333] text-[23px]'>Select your application type to find out how to check your application status.</p>
                     <button className='px-[16px] py-[10px] rounded-md bg-red-700 text-white'>Need Help?</button>
                 </div>
@@ -564,20 +564,20 @@ const Home = () => {
             {/* <img className='mt-4 shadow-lg  w-full cursor-pointer' src={moduleName2} alt="" /> */}
 
             <footer className='mt-[70px]'>
-                <div className='flex justify-between gap-x-[7px] items-center px-[54px] pb-[43px]'>
+                <div className='flex justify-between gap-x-[7px] items-center lg:px-[54px] px-5 pb-[43px]'>
                     <p>Date modified: {data[0]?.date}</p>
                     <button className='bg-[#eaebed] px-[55px] py-[10px] rounded-[4px]'>Share this page</button>
                 </div>
-                <div className='bg-[#33465c] py-[24px] px-[54px]'>
+                <div className='bg-[#33465c] py-[24px] lg:px-[54px] px-5'>
                     <p className='text-[27px]     text-white'>Immigration and citizenship</p>
                     <div className='flex gap-x-[398px] pt-[14px] '>
                         <p className='text-[16px]   text-white'>Help Centre</p>
                         <p className='text-[16px]   text-white'>Contact us</p>
                     </div>
                 </div>
-                <div className='bg-[#26374a] px-[54px] py-[20px]'>
+                <div className='bg-[#26374a] lg:px-[54px] px-5 py-[20px]'>
                     <p className='text-[27px]     text-white'>Government of Canada</p>
-                    <section className='flex gap-x-[230px]'>
+                    <section className='lg:flex gap-x-[230px]'>
                         <div className='flex flex-col gap-y-3'>
                             <p className='text-[16px] text-white'>All contacts</p>
                             <p className='text-[16px] text-white'>Jobs</p>
@@ -610,7 +610,7 @@ const Home = () => {
                         </div>
                     </section>
                 </div>
-                <div className='flex justify-between px-[54px] items-center'>
+                <div className='flex justify-between lg:px-[54px] px-5 items-center'>
                     <div className='flex gap-x-[64px] text-[15px]'>
                         <p>Social media</p>
                         <p>Mobile applications</p>
