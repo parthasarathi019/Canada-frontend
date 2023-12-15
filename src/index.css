@@ -6,28 +6,7 @@ body {
   @apply min-h-screen font-inter overflow-x-hidden;
 }
 
-.rn-gradient-circle {
-  background-image: linear-gradient(45deg, #059dff, #36c6f0);
-  -webkit-filter: blur(100px);
-  filter: blur(100px);
-  @apply fixed w-[500px] h-[500px] top-64 -left-64 -z-10 rounded-full opacity-25;
-}
 
-.rn-gradient-circle.theme-pink {
-  background-image: linear-gradient(45deg, #fb5343, #6549d5);
-  @apply -top-64 -right-64 left-auto bottom-auto;
-}
-
-.gradient-bg {
-  background: linear-gradient(
-      95deg,
-      #059dff 15%,
-      #6549d5 45%,
-      #e33fa1 75%,
-      #fb5343
-    )
-    95%/200% 100%;
-}
 
 .gradient-text {
   background: -webkit-gradient(
@@ -148,7 +127,7 @@ body {
 /* scrollbar */
 
 /* Create a custom scrollbar */
-* {
+/* * {
   scrollbar-width: thin;
   scrollbar-color: #a0aec0 #edf2f7;
 }
@@ -168,4 +147,12 @@ body {
 
 *::-webkit-scrollbar-track {
   @apply bg-transparent;
-}
+} */
+
+
+*{
+  ::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+  }

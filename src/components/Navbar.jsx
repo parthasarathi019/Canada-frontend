@@ -4,8 +4,7 @@ import { MdOutlineClose } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import Swal from "sweetalert2";
 import useAuth from "../hooks/useAuth";
-import useTheme from "../hooks/useTheme";
-import ThemeToggler from "./ThemeToggler";
+
 
 const navItems = [
   {
@@ -28,7 +27,7 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
   const { user, logoutUser } = useAuth();
   const drawerRef = useRef();
 
@@ -65,9 +64,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <h2
-                  className={`ml-2 text-[22px] sm:text-2xl font-bold hidden min-[375px]:block ${
-                    theme === "dark" ? "text-white" : "gradient-text"
-                  }`}
+                  className={`ml-2 text-[22px] sm:text-2xl font-bold hidden min-[375px]:block `}
                 >
                   LensCraft
                 </h2>
@@ -135,7 +132,7 @@ const Navbar = () => {
                     </Link>
                   </>
                 )}
-                <ThemeToggler />
+                {/* <ThemeToggler /> */}
                 <div className="flex-none lg:hidden">
                   <label
                     htmlFor="my-drawer-3"
@@ -176,9 +173,7 @@ const Navbar = () => {
                 </div>
               </div>
               <h2
-                className={`ml-2 text-[22px] sm:text-2xl font-bold ${
-                  theme === "dark" ? "text-white" : "gradient-text"
-                }`}
+                className={`ml-2 text-[22px] sm:text-2xl font-bold`}
               >
                 LensCraft
               </h2>

@@ -7,11 +7,11 @@ const DashboardHome = () => {
   if (isLoading) return <Spinner />;
 
   if (role === "admin")
-    return <Navigate to="/dashboard/manage-classes" replace={true} />;
+    return <Navigate to="/dashboard/Entry" replace={true} />;
   if (role === "instructor")
-    return <Navigate to="/dashboard/my-classes" replace={true} />;
+    return <Navigate to="/dashboard/ManagePost" replace={true} />;
   if (role === "student")
-    return <Navigate to="/dashboard/my-enrolled-classes" replace={true} />;
+    return <Navigate to="/dashboard/BAD_Request" replace={true} />;
 };
 
 export default DashboardHome;

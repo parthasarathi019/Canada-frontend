@@ -1,16 +1,16 @@
-import { Outlet, ScrollRestoration } from "react-router-dom";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 
-const Main = () => {
+const MainPage = () => {
   return (
-    <div className="pt-16">
-      <Navbar />
+    <>
+      {/* <Navbar /> */}
+      {/* <Header></Header> */}
       <Outlet />
-      <Footer />
-      <ScrollRestoration />
-    </div>
-  );
-};
+    </>
+  )
+}
 
-export default Main;
+export default MainPage

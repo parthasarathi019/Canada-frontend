@@ -4,40 +4,45 @@ import Dashboard from "../layouts/Dashboard";
 import Main from "../layouts/Main";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
-import Classes from "../pages/Classes/Classes";
 import Home from "../pages/Home/Home";
-import Instructors from "../pages/Instructors/Instructors";
 import AdminRoute from "../pages/PrivateRoutes/AdminRoutes/AdminRoute";
 import ManageClasses from "../pages/PrivateRoutes/AdminRoutes/ManageClasses";
-import ManageUsers from "../pages/PrivateRoutes/AdminRoutes/ManageUsers";
 import DashboardHome from "../pages/PrivateRoutes/DashboardHome";
-import AddAClass from "../pages/PrivateRoutes/InstructorRoutes/AddAClass";
-import InstructorRoute from "../pages/PrivateRoutes/InstructorRoutes/InstructorRoute";
-import MyClasses from "../pages/PrivateRoutes/InstructorRoutes/MyClasses";
 import PrivateRoute from "../pages/PrivateRoutes/PrivateRoute";
-import MyEnrolledClasses from "../pages/PrivateRoutes/StudentRoutes/MyEnrolledClasses";
-import MySelectedClasses from "../pages/PrivateRoutes/StudentRoutes/MySelectedClasses";
-import Payment from "../pages/PrivateRoutes/StudentRoutes/Payment";
-import PaymentHistory from "../pages/PrivateRoutes/StudentRoutes/PaymentHistory";
-import StudentRoute from "../pages/PrivateRoutes/StudentRoutes/StudentRoute";
+import Work_Permit from "../components/Survices/Work_Permit";
+import Visa from "../components/Survices/Visa";
+import Application_Stts from "../components/Survices/Application_Stts";
+import Lima from "../components/Survices/Lima";
+import MaltipleInput from "../components/Survices/MaltipleInput";
+import InstructorRoute from "../pages/PrivateRoutes/InstructorRoutes/InstructorRoutes";
+import ManagePost from "../pages/PrivateRoutes/InstructorRoutes/ManagePost";
+import Changedate from "../pages/PrivateRoutes/AdminRoutes/Changedate";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    errorElement: <NotFoundPage />,
+    // errorElement: <NotFoundPage />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Home />,
       },
       {
-        path: "/instructors",
-        element: <Instructors />,
+        path: "/Work_Permit",
+        element: <Work_Permit></Work_Permit>
       },
       {
-        path: "/classes",
-        element: <Classes />,
+        path: "/Visa",
+        element: <Visa></Visa>
+      },
+      {
+        path: "/Application_Stts",
+        element: <Application_Stts></Application_Stts>
+      },
+      {
+        path: "/Lima",
+        element: <Lima></Lima>
       },
       {
         path: "/login",
@@ -47,6 +52,11 @@ export const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
+      {
+        path: "/MaltipleInput",
+        element: <MaltipleInput />,
+      },
+
     ],
   },
   {
@@ -62,73 +72,31 @@ export const router = createBrowserRouter([
         path: "/dashboard",
         element: <DashboardHome />,
       },
-      // student routes
-      {
-        path: "my-selected-classes",
-        element: (
-          <StudentRoute>
-            <MySelectedClasses />
-          </StudentRoute>
-        ),
-      },
-      {
-        path: "my-enrolled-classes",
-        element: (
-          <StudentRoute>
-            <MyEnrolledClasses />
-          </StudentRoute>
-        ),
-      },
-      {
-        path: "payment",
-        element: (
-          <StudentRoute>
-            <Payment />
-          </StudentRoute>
-        ),
-      },
-      {
-        path: "payment-history",
-        element: (
-          <StudentRoute>
-            <PaymentHistory />
-          </StudentRoute>
-        ),
-      },
-
-      // instructor routes
-      {
-        path: "add-a-class",
-        element: (
-          <InstructorRoute>
-            <AddAClass />
-          </InstructorRoute>
-        ),
-      },
-      {
-        path: "my-classes",
-        element: (
-          <InstructorRoute>
-            <MyClasses />
-          </InstructorRoute>
-        ),
-      },
-
       // admin routes
       {
-        path: "manage-classes",
+        path: "Entry",
         element: (
           <AdminRoute>
             <ManageClasses />
           </AdminRoute>
         ),
       },
+
       {
-        path: "manage-users",
+        path: "change-date",
         element: (
           <AdminRoute>
-            <ManageUsers />
+            <Changedate />
           </AdminRoute>
+        ),
+      },
+      // modarator routes
+      {
+        path: "ManagePost",
+        element: (
+          <InstructorRoute>
+            <ManagePost></ManagePost>
+          </InstructorRoute>
         ),
       },
     ],

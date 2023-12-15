@@ -106,7 +106,7 @@ const Register = () => {
                   className="input md:py-7 input-bordered border-2 focus:outline-none focus:border-primary"
                   {...register("email", {
                     required: true,
-                    pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
+                    // pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
                   })}
                 />
                 {errors.email?.type === "required" && (
@@ -132,8 +132,7 @@ const Register = () => {
                   className="input md:py-7 input-bordered border-2 focus:outline-none focus:border-primary pr-12"
                   {...register("password", {
                     required: true,
-                    pattern:
-                      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/,
+                    // pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/,
                   })}
                 />
                 {errors.password?.type === "required" && (
@@ -141,12 +140,12 @@ const Register = () => {
                     Password is required
                   </span>
                 )}
-                {errors.password?.type === "pattern" && (
+                {/* {errors.password?.type === "pattern" && (
                   <span className="text-red-500 text-sm p-1">
                     Password should contain minimum 6 characters, one uppercase
                     letter, one lowercase letter, and one special character
                   </span>
-                )}
+                )} */}
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}

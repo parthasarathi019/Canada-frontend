@@ -6,11 +6,11 @@ const useUserRole = () => {
   const { user } = useAuth();
   const token = localStorage.getItem("token");
   const { data, isLoading } = useQuery({
-    queryKey: ["role", user, token],
+    queryKey: ["role", "title", user, token],
     enabled: Boolean(user?.email && token),
     queryFn: async () => {
       const res = await axios.get(
-        `https://lenscraft-server.vercel.app/api/users/${user?.email}`,
+        `https://backend-kappa-puce.vercel.app/api/users/${user?.email}`,
         {
           headers: {
             Authorization: token,
@@ -20,7 +20,7 @@ const useUserRole = () => {
       return res.data;
     },
   });
-  return { role: data?.role, isLoading };
+  return { role: data?.role, isLoading, title: data?.title, };
 };
 
 export default useUserRole;
